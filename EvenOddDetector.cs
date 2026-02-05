@@ -2,19 +2,6 @@ using System;
 
 /// <summary>
 /// Ejercicio 3: Detector de Pares
-/// 
-/// INSTRUCCIONES:
-/// Completa el código para detectar si un número es par o impar.
-/// 
-/// REGLAS:
-/// - Si number dividido entre 2 da residuo 0 → retorna "PAR"
-/// - Si number dividido entre 2 da residuo 1 → retorna "IMPAR"
-/// - Usa el operador módulo % para obtener el residuo
-/// 
-/// EJEMPLOS:
-/// DetectEvenOdd(4) → "PAR" 
-/// DetectEvenOdd(7) → "IMPAR" 
-/// DetectEvenOdd(0) → "PAR" 
 /// </summary>
 public class EvenOddDetector
 {
@@ -23,6 +10,17 @@ public class EvenOddDetector
         string resultado = ""; 
         
         // TODO: Usa el operador % y if/else para determinar si es PAR o IMPAR
+        
+        // Si el residuo de dividir el número entre 2 es 0, es PAR
+        if (number % 2 == 0)
+        {
+            resultado = "PAR";
+        }
+        // Si el residuo es 1 (o cualquier otro valor), es IMPAR
+        else
+        {
+            resultado = "IMPAR";
+        }
         
         return resultado;
     }
